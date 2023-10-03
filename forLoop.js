@@ -10,41 +10,41 @@
         iterator:   Thực hiện câu lệnh sau mỗi lần lặp
         
 */
-/*
-    console.log("A simple JavaScript for loop example");
-    for (let i = 1; i < 5; i++) {
-        console.log(i);
-    }
 
-    console.log("for loop without the initializer");
-    let b = 1;
-    for (; b < 10; b += 2) {
-        console.log(b);
-    }
+    // console.log("A simple JavaScript for loop example");
+    // for (let i = 1; i < 5; i++) {
+    //     console.log(i);
+    // }
 
-    console.log("for loop without the condition");
-    for (let c = 1; ; c += 2) {
-        console.log(c);
-        if (c > 10) {
-        break;
-        }
-    }
+    // console.log("for loop without the initializer");
+    // let b = 1;
+    // for (; b < 10; b += 2) {
+    //     console.log(b);
+    // }
 
-    console.log("for loop statement without any expression");
-    let d = 1;
-    for (;;) {
-        if (d > 10) {
-            break;
-        }
-    console.log(d);
-    d += 2;
-    }
+    // console.log("for loop without the condition");
+    // for (let c = 1; ; c += 2) {
+    //     console.log(c);
+    //     if (c > 10) {
+    //     break;
+    //     }
+    // }
 
-    console.log("for loop without the loop body ");
-    let sum = 0;
-    for (let i = 0; i <= 9; i++, sum += i);
-    console.log(sum);
-*/
+    // console.log("for loop statement without any expression");
+    // let d = 1;
+    // for (;;) {
+    //     if (d > 10) {
+    //         break;
+    //     }
+    // console.log(d);
+    // d += 2;
+    // }
+
+    // console.log("for loop without the loop body ");
+    // let sum = 0;
+    // for (let i = 0; i <= 9; i++, sum += i);
+    // console.log(sum);
+
 
 /* 
 ==========================================   FLoop For In    =============================================================
@@ -57,21 +57,21 @@
             code
         }
 */
-/*
-    const object = {fname:"Huyen", lname:"Tran", age:22};
-    let text = "";
-    for (let x in object) {
-        text += object[x];
-    }
-    console.log(text);
 
-    const arrays = ['vo', 'huyen', 'tran', 'intern', 22];
-    let txt = "";
-    for (let x in arrays) {
-      txt += arrays[x];
-    }
-    console.log(txt);
-*/
+    // const object = {fname:"Huyen", lname:"Tran", age:22};
+    // let text = "";
+    // for (let x in object) {
+    //     text += object[x];
+    // }
+    // console.log(text);
+
+    // const arrays = ['vo', 'huyen', 'tran', 'intern', 22];
+    // let txt = "";
+    // for (let x in arrays) {
+    //   txt += arrays[x];
+    // }
+    // console.log(txt);
+
 
 /* 
 ==========================================  Loop For Of  =============================================================
@@ -86,21 +86,21 @@
     - 
 
 */
-/*
-    const cars = ["BMW", "Volvo", "Mini"];
-    let txtCars = "";
-    for (let x of cars) {
-        txtCars += x;
-    }
-    console.log(txtCars);
 
-    let language = "JavaScript";
-    let txtLanguage = "";
-    for (let x of language) {
-        txtLanguage += x;
-    }
-    console.log(txtLanguage);
-*/
+    // const cars = ["BMW", "Volvo", "Mini"];
+    // let txtCars = "";
+    // for (let x of cars) {
+    //     txtCars += x;
+    // }
+    // console.log(txtCars);
+
+    // let language = "JavaScript";
+    // let txtLanguage = "";
+    // for (let x of language) {
+    //     txtLanguage += x;
+    // }
+    // console.log(txtLanguage);
+
 /* 
 ==========================================  Loop While  =============================================================
     - Sumary: The while loop loops through a block of code as long as a specified condition is true.
@@ -115,24 +115,24 @@
         }
         while (condition);
 */
-/** 
-    let text = "";
-    let i = 0;
-    while (i < 10) {
-        text += " The number is " + i + '\;';
-        i++;
-    }
-    console.log(text)
+ 
+    // let text = "";
+    // let i = 0;
+    // while (i < 10) {
+    //     text += " The number is " + i + '\;';
+    //     i++;
+    // }
+    // console.log(text)
 
-    let textDoWhile = ""
-    let j = 9;
-    do {
-        textDoWhile += " The number is " + j + '\;';
-        j++;
-    }
-    while (j < 10);
-    console.log(textDoWhile)
-*/
+    // let textDoWhile = ""
+    // let j = 9;
+    // do {
+    //     textDoWhile += " The number is " + j + '\;';
+    //     j++;
+    // }
+    // while (j < 10);
+    // console.log(textDoWhile)
+
 
 /* 
 ==========================================  Module Export  =============================================================
@@ -148,7 +148,7 @@
             Một module chỉ có thể có một giá trị default export.
             Default export không yêu cầu tên khi import, bạn có thể đặt tên bất kỳ cho giá trị khi import
 */
-/* 
+
     const name = "John";
     const age = 25;
 
@@ -161,4 +161,4 @@
     name: "Default Name",
     age: 30,
     };
-*/
+
