@@ -19,8 +19,7 @@
             Lưu ý: 
                 ++ This trong hàm tạo sẽ đại diện cho đối tượng sẽ được tạo
                 ++ This trong hàm tạo là underfined khi ở stric  mode
-                ++ Các phương thức blind(), call(), apply() có thể tham chiếu đến đối tượng khác.
-            
+                ++ Các phương thức blind(), call(), apply() có thể tham chiếu đến đối tượng khác.         
                 
 */
         // var User = function( firstName, lastName ){
@@ -254,12 +253,46 @@
     
 /*
 ==========================================  Module Export  ============================================================= */
-    // const { name, age } = require("./forLoop.js");
-    // const defaultObj = require("./forLoop.js").default;
 
-    // console.log(name); // Output: "John"
-    // console.log(age); // Output: 25
+// Import named exports
+    // import { add, subtract } from "./forLoop.js";
 
-    // console.log(defaultObj.name); // Output: "Default Name"
-    // console.log(defaultObj.age); // Output: 30
-    
+    // // Import default export
+    // import multiply from "./forLoop.js";
+
+    // console.log(add(5, 3)); // Kết quả: 8
+    // console.log(subtract(5, 3)); // Kết quả: 2
+    // console.log(multiply(5, 3)); // Kết quả: 15
+
+/** =================================== Sử dụng Dependency bằng NPM trong NodeJs========================================= 
+    Khi bạn chạy ứng dụng của mình, npm sẽ tự động tải các thư viện phụ thuộc cần thiết vào môi trường.
+    Ví dụ sử dụng thư viện axios
+        Thực hiện các bước sau:
+        1) Cài đặt phụ thuộc axios từ npm bằng lệnh sau:
+            cách 1: npm install axios
+            cách 2:
+                - Thêm phụ thuộc "axios" với phiên bản "^0.21.4" vào phần "dependencies" trong file package.json.
+                    "dependencies": {
+                        "axios": "^0.21.4"
+                    }
+                - Trong thư mục dự án, chạy lệnh sau để cài đặt phụ thuộc: npm install
+        2) Thêm đoạn mã sau vào file:
+            axios.get('https://jsonplaceholder.typicode.com/posts')
+                .then(response => {
+                    const data = response.data.slice(0, 5);
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+*/
+        import axios from 'axios';
+
+        axios.get('https://jsonplaceholder.typicode.com/posts')
+        .then(response => {
+            const data = response.data.slice(0, 5);
+            console.log(data);
+        })
+        .catch(error => {
+            console.error(error);
+        });

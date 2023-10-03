@@ -149,16 +149,13 @@
             Default export không yêu cầu tên khi import, bạn có thể đặt tên bất kỳ cho giá trị khi import
 */
 
-    const name = "John";
-    const age = 25;
+// Default export
+    // export default function multiply(a, b) {
+    //     return a * b;
+    // }
+    
+    // // Named export
+    // export const add = (a, b) => a + b;
+    // export const subtract = (a, b) => a - b;
 
-    module.exports = {
-    name,
-    age,
-    };
-
-    module.exports.default = {
-    name: "Default Name",
-    age: 30,
-    };
 
