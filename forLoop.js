@@ -152,12 +152,12 @@
     const name = "John";
     const age = 25;
 
-    module.exports = {
+    exports = {
     name,
     age,
     };
 
-    module.exports.default = {
+    exports.default = {
     name: "Default Name",
     age: 30,
     };
