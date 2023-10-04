@@ -19,8 +19,7 @@
             Lưu ý: 
                 ++ This trong hàm tạo sẽ đại diện cho đối tượng sẽ được tạo
                 ++ This trong hàm tạo là underfined khi ở stric  mode
-                ++ Các phương thức blind(), call(), apply() có thể tham chiếu đến đối tượng khác.
-            
+                ++ Các phương thức blind(), call(), apply() có thể tham chiếu đến đối tượng khác.         
                 
 */
         // var User = function( firstName, lastName ){
@@ -254,12 +253,12 @@
     
 /*
 ==========================================  Module Export  ============================================================= */
-    const { name, age } = require("./forLoop.js");
-    const defaultObj = require("./forLoop.js").default;
+    // const { name, age } = require("./forLoop.js");
+    // const defaultObj = require("./forLoop.js").default;
 
-    console.log(name); // Output: "John"
-    console.log(age); // Output: 25
+    // console.log(name); // Output: "John"
+    // console.log(age); // Output: 25
 
-    console.log(defaultObj.name); // Output: "Default Name"
-    console.log(defaultObj.age); // Output: 30
+    // console.log(defaultObj.name); // Output: "Default Name"
+    // console.log(defaultObj.age); // Output: 30
     
